@@ -1,12 +1,10 @@
-{ 
- "data":[
-    {
+
+{
       "first_name":"James",
       "last_name":"Harden",
       "position":"G",
       "height_feet": 6,
       "height_inches": 5,
       "weight_pounds": 220
-      }
       
 }

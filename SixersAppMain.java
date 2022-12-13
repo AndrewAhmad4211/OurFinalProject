@@ -14,8 +14,8 @@ public class SixersAppMain extends Application{
    @Override
    public void start(Stage stage) throws Exception{
    
-      Parent root = FXMLLoader.load(getClass().getResource("SceneBuilder.fxml"));
-      Scene scene = new Scene(root);
+      // Parent root = FXMLLoader.load(getClass().getResource("SceneBuilder.fxml"));
+      Scene scene = new Scene(root);  
       // check how to add picture as title
       stage.setScene(scene);
       stage.show();

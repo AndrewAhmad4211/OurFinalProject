@@ -21,12 +21,12 @@
             <Text layoutX="254.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height Inches" />
             <Text layoutX="345.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position" />
             <Text layoutX="410.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight" />
-            <Text fx:id="first_name" layoutX="30.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="James" wrappingWidth="57.90420048796943" />
-            <Text fx:id="last_name" layoutX="107.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harden" />
-            <Text fx:id="height_feet" layoutX="201.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
-            <Text fx:id="height_inches" layoutX="288.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
-            <Text fx:id="position" layoutX="362.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
-            <Text fx:id="weight" layoutX="418.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="220" />
+            <Text fx:id="first_name" layoutX="30.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="57.90420048796943" />
+            <Text fx:id="last_name" layoutX="107.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fx:id="height_feet" layoutX="201.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fx:id="height_inches" layoutX="288.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fx:id="position" layoutX="362.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fx:id="weight" layoutX="418.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
          </children>
       </AnchorPane>
       <Button layoutX="51.0" layoutY="220.0" mnemonicParsing="false" onAction="#displaysNextPlayer" prefHeight="29.0" prefWidth="77.0" text="Next" />

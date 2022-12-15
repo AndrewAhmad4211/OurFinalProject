@@ -27,20 +27,8 @@
             <Text fx:id="height_inches" layoutX="288.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
             <Text fx:id="position" layoutX="362.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
             <Text fx:id="weight" layoutX="418.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="220" />
-            <Text layoutX="33.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joel" />
-            <Text layoutX="108.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Embiid" />
-            <Text layoutX="201.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
-            <Text layoutX="288.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
-            <Text layoutX="357.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F-C" />
-            <Text layoutX="418.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250" />
-            <Text layoutX="26.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tobias" />
-            <Text layoutX="109.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harris" />
-            <Text layoutX="200.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" wrappingWidth="9.08203125" />
-            <Text layoutX="291.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
-            <Text layoutX="363.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
-            <Text layoutX="419.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="235" />
          </children>
       </AnchorPane>
-      <Button layoutX="51.0" layoutY="220.0" mnemonicParsing="false" onAction="#displaysNextPlayer" prefHeight="29.0" prefWidth="77.0" text="Button" />
+      <Button layoutX="51.0" layoutY="220.0" mnemonicParsing="false" onAction="#displaysNextPlayer" prefHeight="29.0" prefWidth="77.0" text="Next" />
    </children>
 </AnchorPane>

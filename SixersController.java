@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import java.util.prefs.Preferences;
 import javafx.application.Platform;
 
+
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -45,7 +46,12 @@ public class SixersController {
     private HttpClient client;
     
     private Player player;
+    
+    // private Stats stats;
 
+    private String [] players = {"192","145","200"};
+    int counter = 0;
+    
     @FXML
     protected void displaysNextPlayer(ActionEvent event) {
       System.out.println("Button pressed");
@@ -55,10 +61,10 @@ public class SixersController {
     protected void updateUI(){
          first_name.setText(player.first_name);
          last_name.setText(player.last_name);
-         height_feet.setText(player.height_feet);
-         height_inches.setText(player.height_inches);
+         height_feet.setText(player.height_feet+"");
+         height_inches.setText(player.height_inches+"");
          position.setText(player.position);
-         weight.setText(player.weight);
+         weight.setText(player.weight_pounds+"");
     }
    
     protected void processPlayerData(String data) {
@@ -79,7 +85,7 @@ public class SixersController {
             
          try{
               HttpRequest request = HttpRequest.newBuilder()
-                  .uri(new URI("https://www.balldontlie.io/api/v1/players/145"))
+                  .uri(new URI("https://www.balldontlie.io/api/v1/players/"+players[counter++ % 3]))
                   .GET()
                   .build();
               
@@ -91,6 +97,11 @@ public class SixersController {
          }
          System.out.println("Updating Information...");
     }
+   
+   
+   
+   
+   
    
           
 }

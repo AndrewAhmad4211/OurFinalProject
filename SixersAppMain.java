@@ -24,7 +24,7 @@ public class SixersAppMain extends Application{
    
    @Override
    public void stop(){
-      // System.out.println("Stop is called in A 
+       
    }
    
 }

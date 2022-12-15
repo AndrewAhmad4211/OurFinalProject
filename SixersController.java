@@ -48,13 +48,50 @@ public class SixersController {
 
     @FXML
     protected void displaysNextPlayer(ActionEvent event) {
-      // updateNextPlayer(); 
+      System.out.println("Button pressed");
+      updatePlayerData();
+    }
+    
+    protected void updateUI(){
+         first_name.setText(player.first_name);
+         last_name.setText(player.last_name);
+         height_feet.setText(player.height_feet);
+         height_inches.setText(player.height_inches);
+         position.setText(player.position);
+         weight.setText(player.weight);
     }
    
-   // create button
-   Button button = new Button("Next");
-   // give the button an action to go to the next player 
+    protected void processPlayerData(String data) {
+         System.out.println(data); 
+         Gson gson = new Gson();
+         this.player = gson.fromJson(data, Player.class);
+         
+         
+         Platform.runLater( new Runnable() {
+                           public void run() {
+                              updateUI();
+                           }
+                        });
+    }
+    protected void updatePlayerData(){
+         if(this.client == null)
+            this.client = HttpClient.newHttpClient();
+            
+         try{
+              HttpRequest request = HttpRequest.newBuilder()
+                  .uri(new URI("https://www.balldontlie.io/api/v1/players/145"))
+                  .GET()
+                  .build();
+              
+              client.sendAsync(request, BodyHandlers.ofString())
+                  .thenApply(HttpResponse::body)
+                  .thenAccept(this::processPlayerData); 
+         } catch(URISyntaxException e){
+               System.out.println("Issue with request");
+         }
+         System.out.println("Updating Information...");
+    }
    
-   
+          
 }
 

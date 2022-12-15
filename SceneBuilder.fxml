@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="560.0" style="-fx-background-color: #0096FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="560.0" style="-fx-background-color: #0096FF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SixersController">
    <children>
       <ImageView fitHeight="208.0" fitWidth="278.0" layoutX="178.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -41,6 +41,6 @@
             <Text layoutX="419.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="235" />
          </children>
       </AnchorPane>
-      <BottomNavigationButton layoutX="45.0" layoutY="205.0" onAction="#displaysNextPlayer" prefHeight="39.0" prefWidth="113.0" text="Next " />
+      <Button layoutX="51.0" layoutY="220.0" mnemonicParsing="false" onAction="#displaysNextPlayer" prefHeight="29.0" prefWidth="77.0" text="Button" />
    </children>
 </AnchorPane>
